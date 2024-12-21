@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtitle Synchronizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Subtitle Synchronizer</h1>
+        <form id="syncForm" enctype="multipart/form-data">
+            <label for="videoFile">Upload Video:</label>
+            <input type="file" id="videoFile" name="videoFile" accept="video/*" required>
+            
+            <label for="subtitleFile">Upload Subtitle (SRT):</label>
+            <input type="file" id="subtitleFile" name="subtitleFile" accept=".srt" required>
+            
+            <button type="submit">Synchronize Subtitles</button>
+        </form>
+        <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
